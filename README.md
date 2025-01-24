@@ -5,7 +5,7 @@ Applicazione angular per l'utilizzo dei servizi di una palestra e la gestione am
 
 ## 1. Titolo
 **AngFitness**  
-Un'applicazione web per gestire programmi di allenamento e migliorare il benessere fisico.
+Un'applicazione web per gestire programmi di allenamento.
 
 ---
 
