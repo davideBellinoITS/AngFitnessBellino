@@ -1,0 +1,43 @@
+.container-image {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.home-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.home-title {
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  right: 0;
+  margin: 0;
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.home-container-card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.home-button {
+  display: block;
+  margin: 40px auto;
+  background-color: #0e81ec;
+}
+
+@media (max-width: 1200px) {
+  .home-container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}

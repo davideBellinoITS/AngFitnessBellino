@@ -1,0 +1,26 @@
+@if(openModalSubscription){
+    <app-modale-iscrizione-corso [corso]="corso()" (closeSubscribeModal)="handleSubscribeModal()" ></app-modale-iscrizione-corso>
+}
+
+<div class="container">
+    <img src="{{corso().immagine}}" alt="Immagine del corso">
+    <h3>{{corso().nome}}</h3>
+    <p>{{corso().descrizione}}</p>
+    <p><strong>Istruttore:</strong> {{corso().istruttore}}</p>
+    <p><strong>Durata:</strong> {{corso().durata}}</p>
+    
+    @if (path === '/corsi') {
+        <p><strong>Iscritti:</strong> {{corso().iscritti}} / {{corso().capacitaMax}}</p>
+        @if (corso().disponibilita) {
+            <p class="text-available">Corso disponibile</p>
+            <button class="subscribe-button"  (click)="handleSubscribeModal()">Iscriviti al corso</button>
+
+        } @else {
+            <p class="text-unavailable">Corso non disponibile</p>
+            <button class="unavailable-button" (click)="handleSubscribeModal()">Corso non disponibile</button>
+        }
+
+    }@else if(path === '/amministrazione') {
+        <button class="delete-button" (click)="deleteCorso(corso().id)">elimina corso</button>
+    }
+</div>

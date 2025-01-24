@@ -1,0 +1,28 @@
+.container-info-amm {
+    display: flex;
+    width: 100%;
+}
+
+.add-corso-button {
+    background-color: #3b9c14;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 20px 30%;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .container-info-amm {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .add-corso-button {
+        display: block;
+        margin: 20px auto;
+    }
+
+}

@@ -1,0 +1,24 @@
+<div class="prenotazioni-container">
+
+    <h2>Lista prenotazioni</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Cognome</th>
+                <th>Corso</th>
+            </tr>
+        </thead>
+        <tbody>
+        @for(prenotazione of prenotazioni(); track prenotazione.id){
+            <tr>
+                <td>{{prenotazione.nomeUtente}}</td>
+                <td>{{prenotazione.cognomeUtente}}</td>
+                <td>{{prenotazione.nomeCorso}}</td>
+            </tr>
+
+        }
+    </tbody>
+    </table>
+
+</div>

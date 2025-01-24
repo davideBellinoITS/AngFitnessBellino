@@ -1,0 +1,11 @@
+<div class="container-image">
+<img class="home-image" src="./images/home.jpg" alt="">
+</div>
+<h1 class="home-title">Power-gym la palestra dei tuoi sogni</h1>
+<div class="home-container-card">
+@for(corso of fewCourses(); track corso.id){
+    <app-corso [corso]="corso"></app-corso>
+}
+</div>
+
+<button class="home-button" routerLink="/corsi">Visualizza tutti i corsi</button>

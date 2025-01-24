@@ -1,0 +1,76 @@
+<div class="modal-background">
+
+    <form class="modal-form-container" [formGroup]="form" (ngSubmit)="onSubmit()">
+
+        <div class="input-group">
+            <label for="nome" class="form-label">Nome corso</label>
+            <input type="text" id="nome" class="form-control" formControlName="nome"
+                placeholder="Inserisci il nome del corso">
+        </div>
+
+        <div class="input-group">
+            <label for="descrizione" class="form-label">Descrizione corso</label>
+            <input type="text" id="descrizione" class="form-control" formControlName="descrizione"
+                placeholder="Inserisci la descrizione del corso">
+        </div>
+
+        <div class="input-group">
+            <label for="istruttore" class="form-label">Istruttore corso</label>
+            <input type="text" id="istruttore" class="form-control" formControlName="istruttore"
+                placeholder="Inserisci il nome dell'istruttore del corso">
+        </div>
+
+        <div class="input-group">
+            <label for="durata" class="form-label">Durata corso</label>
+            <input type="text" id="durata" class="form-control" formControlName="durata"
+                placeholder="Inserisci la durata del corso">
+        </div>
+
+        <div class="input-group">
+            <label for="capacita" class="form-label">Capacita massima corso</label>
+            <input type="text" id="capacita" class="form-control" formControlName="capacita"
+                placeholder="Inserisci la capacita massima del corso">
+        </div>
+
+
+        <div class="input-group">
+            <label for="immagine" class="form-label">Immagine corso</label>
+            <input type="text" id="immagine" class="form-control" formControlName="immagine"
+                placeholder="Inserisci url immagine corso">
+        </div>
+
+        <div class="modal-btn-container">
+            <button type="button" class="cancel-modal-button" (click)="onCloseModal()">Annulla</button>
+            <button class="add-course-modal-button">Aggiungi corso</button>
+        </div>
+
+        @if(emptyForm){
+        <p class="text-error">Compilare tutti i campi prima di inviare l'iscrizione</p>
+        }
+
+        @if(isNameValid) {
+        <p class="text-error">Il campo del nome è vuoto, si prega di compilarlo</p>
+        }
+
+        @if(isDescriptionValid) {
+        <p class="text-error">Il campo della descrizione è vuoto, si prega di compilarlo</p>
+        }
+
+        @if(isIstructorValid) {
+        <p class="text-error">Il campo dell'istruttore è vuoto, si prega di compilarlo</p>
+        }
+
+        @if(isDurationValid) {
+        <p class="text-error">Il campo della durata è vuoto, si prega di compilarlo</p>
+        }
+
+        @if(isCapacityValid) {
+        <p class="text-error">Il campo della capacità è vuoto, si prega di compilarlo</p>
+        }
+      
+
+    </form>
+
+
+
+</div>

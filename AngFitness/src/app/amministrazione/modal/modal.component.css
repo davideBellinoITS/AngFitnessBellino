@@ -1,0 +1,49 @@
+.modal-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.modal-form-container {
+
+    width: 400px;
+    position: fixed;
+    top: 80px;
+    left: 50%;
+    margin-left: -200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 5px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.modal-btn-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cancel-modal-button{
+color: red;
+border: 1px solid red;
+background-color: white;
+}
+
+.add-course-modal-button{
+    background-color: rgb(26, 190, 26);
+}

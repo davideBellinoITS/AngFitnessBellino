@@ -1,0 +1,57 @@
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin:20px;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    border-radius: 8px;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+p {
+    font-size: 1rem;
+    margin: 15px 0;
+    text-align: left;
+    padding: 0 30px;
+}
+
+.text-available {
+    color: #27ae60;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.text-unavailable {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.unavailable-button {
+    background: #899fad;
+}
+
+.subscribe-button {
+    background: #3498db;
+}
+
+.delete-button {
+    background: #db3434;
+}

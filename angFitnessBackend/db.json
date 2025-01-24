@@ -1,0 +1,148 @@
+{
+  "corsi": [
+    {
+      "id": "1",
+      "nome": "Functional Training",
+      "descrizione": "Allenamento funzionale per migliorare forza e coordinazione.",
+      "istruttore": "Marco Rossi",
+      "durata": 45,
+      "capacitaMax": 20,
+      "iscritti": 1,
+      "disponibilita": true,
+      "immagine": "http://localhost:3000/images/img1.jpg"
+    },
+    {
+      "id": "3",
+      "nome": "Total Body Workout",
+      "descrizione": "Allenamento completo per tutto il corpo.",
+      "istruttore": "Anna Verdi",
+      "durata": 50,
+      "capacitaMax": 30,
+      "iscritti": 30,
+      "disponibilita": false,
+      "immagine": "http://localhost:3000/images/img3.jpg"
+    },
+    {
+      "id": "4",
+      "nome": "HIIT (High-Intensity Interval Training)",
+      "descrizione": "Allenamento intervallato ad alta intensità.",
+      "istruttore": "Sara Neri",
+      "durata": 40,
+      "capacitaMax": 15,
+      "iscritti": 13,
+      "disponibilita": true,
+      "immagine": "http://localhost:3000/images/img4.jpg"
+    },
+    {
+      "id": "5",
+      "nome": "Stretching e Mobilità",
+      "descrizione": "Migliora la flessibilità e la mobilità articolare.",
+      "istruttore": "Giulia Blu",
+      "durata": 30,
+      "capacitaMax": 20,
+      "iscritti": 7,
+      "disponibilita": true,
+      "immagine": "http://localhost:3000/images/img5.jpeg"
+    },
+    {
+      "id": "6",
+      "nome": "Powerlifting",
+      "descrizione": "Corso per migliorare la forza nei tre esercizi principali: squat, panca e stacco.",
+      "istruttore": "Federico Viola",
+      "durata": 60,
+      "capacitaMax": 12,
+      "iscritti": 3,
+      "disponibilita": true,
+      "immagine": "http://localhost:3000/images/img6.jpg"
+    },
+    {
+      "id": "7",
+      "nome": "Spinning",
+      "descrizione": "Lezione di ciclismo indoor per migliorare resistenza e forza.",
+      "istruttore": "Laura Rosa",
+      "durata": 45,
+      "capacitaMax": 25,
+      "iscritti": 1,
+      "disponibilita": true,
+      "immagine": "http://localhost:3000/images/img7.jpg"
+    },
+    {
+      "id": "8",
+      "nome": "Boxe Fitness",
+      "descrizione": "Allenamento di boxe per migliorare resistenza e forza.",
+      "istruttore": "Paolo Gialli",
+      "durata": 40,
+      "capacitaMax": 20,
+      "iscritti": 1,
+      "disponibilita": true,
+      "immagine": "http://localhost:3000/images/img8.webp"
+    },
+    {
+      "id": "9",
+      "nome": "Stretching Avanzato",
+      "descrizione": "Tecniche avanzate per migliorare la flessibilità.",
+      "istruttore": "Simone Rosi",
+      "durata": 30,
+      "capacitaMax": 15,
+      "iscritti": 0,
+      "disponibilita": true,
+      "immagine": "http://localhost:3000/images/img9.jpg"
+    }
+  ],
+  "prenotazioni": [
+    {
+      "id": "eb2a",
+      "nomeUtente": "mario",
+      "cognomeUtente": "rossi",
+      "nomeCorso": "Powerlifting"
+    },
+    {
+      "id": "75f4",
+      "nomeUtente": "matteo",
+      "cognomeUtente": "verdi",
+      "nomeCorso": "Spinning"
+    },
+    {
+      "id": "e432",
+      "nomeUtente": "luca ",
+      "cognomeUtente": "gialli",
+      "nomeCorso": "Circuit Training"
+    },
+    {
+      "id": "99c3",
+      "nomeUtente": "martina",
+      "cognomeUtente": "rossi",
+      "nomeCorso": "Stretching e Mobilità"
+    },
+    {
+      "id": "06b1",
+      "nomeUtente": "Silvia",
+      "cognomeUtente": "Bianchi",
+      "nomeCorso": "Stretching e Mobilità"
+    },
+    {
+      "id": "254b",
+      "nomeUtente": "Paolo",
+      "cognomeUtente": "Carli",
+      "nomeCorso": "Boxe Fitness"
+    },
+    {
+      "id": "93cb",
+      "nomeUtente": "Davide",
+      "cognomeUtente": "Bell",
+      "nomeCorso": "Functional Training"
+    },
+    {
+      "id": "9892",
+      "nomeUtente": "mario ",
+      "cognomeUtente": "rossii",
+      "nomeCorso": "Stretching e Mobilità"
+    },
+    {
+      "id": "06b3",
+      "nomeUtente": "mario",
+      "cognomeUtente": "Bianchi",
+      "nomeCorso": "Powerlifting"
+    }
+  ]
+}

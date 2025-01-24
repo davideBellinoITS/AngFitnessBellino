@@ -1,0 +1,38 @@
+<div class="modal-background">
+
+    <form class="modal-form-container" [formGroup]="subscriptionForm" (ngSubmit)="onSubmit()">
+
+        <div class="input-group">
+            <label for="nome-utente" class="form-label">Nome</label>
+            <input type="text" id="nome-utente" class="form-control" formControlName="nomeUtente"
+                placeholder="Inserisci il tuo nome">
+        </div>
+
+        <div class="input-group">
+            <label for="cognome-utente" class="form-label">Cognome</label>
+            <input type="text" id="cognome-utente" class="form-control" formControlName="cognomeUtente"
+                placeholder="Inserisci il tuo cognome">
+        </div>
+
+        <div class="modal-btn-container">
+            <button type="button" class="cancel-modal-button" (click)="onCloseSubscribeModal()">Annulla</button>
+            <button class="subscribe-modal-button">Iscriviti</button>
+        </div>
+
+        @if(emptyForm){
+        <p class="text-error">Compilare tutti i campi prima di inviare l'iscrizione</p>
+        }
+        @if(isNameValid) {
+        <p class="text-error">Il campo del nome è vuoto, si prega di compilarlo</p>
+        }
+        @if(isSurnameValid) {
+        <p class="text-error">Il campo del cognome è vuoto, si prega di compilarlo</p>
+        }
+
+    </form>
+
+
+
+
+
+</div>

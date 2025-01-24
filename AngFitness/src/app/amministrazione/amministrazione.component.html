@@ -1,0 +1,11 @@
+<button class="add-corso-button" (click)="addCorso()">Aggiungi corso</button>
+
+
+@if(openModal){
+    <app-modal (closeModal)="onClosedModal()"></app-modal>
+}
+
+<div class="container-info-amm">
+<app-lista-corsi></app-lista-corsi>
+<app-lista-prenotazioni></app-lista-prenotazioni>
+</div>
